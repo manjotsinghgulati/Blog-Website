@@ -2,5 +2,25 @@
 
 <h1> Home </h1>
 <p><%= homeContent %></p>
+<br>
+
+<% allPosts.forEach((post) => { %>
+    <h2><%= post.title %></h2>
+    <p class="content">
+        <%= post.content%>
+        <a class="link-primary" href="/post/<%= post.title %>">Read More</a>
+    </p>
+    
+    <hr>
+<% }); %>
+
+<script>
+    const content = document.querySelectorAll(".content");
+    content.forEach((item) => {
+        if (item.textContent.length > 120) {
+            item.textContent = item.textContent.slice(0, 120) + "...";
+        }
+    });
+</script>
 
 <%- include("partials/footer") -%>
