@@ -20,12 +20,13 @@
 }
 
 .footer {
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	bottom: 0;
 	width: 100%;
 	height: 60px;
 	background-color: #1abc9c;
+ 
 }
 
 .read-more-btn{
