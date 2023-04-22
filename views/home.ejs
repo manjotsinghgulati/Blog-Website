@@ -10,16 +10,16 @@
         <p class="content">
             <%= post.content%>
         </p>
-        <a class="link-primary" href="/post/<%= post._id %>">Read More</a>
     </div>
+    <a href="/post/<%= post._id %>"><button type="button" class="btn btn-primary read-more-btn">Read More</button> </a>
     <hr>
 <% }); %>
 
 <script>
     const content = document.querySelectorAll(".content");
     content.forEach((item) => {
-        if (item.textContent.length > 120) {
-            item.textContent = item.textContent.slice(0, 120) + "...";
+        if (item.textContent.length > 320) {
+            item.textContent = item.textContent.slice(0, 320) + "...";
         }
     });
 </script>
