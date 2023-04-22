@@ -28,6 +28,26 @@
 	background-color: #1abc9c;
 }
 
+.read-more-btn{
+    background-color: #1abc9c;
+    border: none;
+}
+
+.read-more-btn:hover{
+    background-color: #119076;
+    border: none;
+}
+
+.read-more-btn:active{
+    background-color: #119076;
+    border: none;
+}
+
+.read-more-btn:focus{
+    background-color: #119076;
+    border: none;
+}
+
 .footer p {
 	margin-top: 25px;
 	font-size: 12px;
